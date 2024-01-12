@@ -1,8 +1,6 @@
 function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+  // eslint-disable-next-line react/react-in-jsx-scope, react/jsx-filename-extension
+  return <div className="App" />;
 }
 
 export default App;
