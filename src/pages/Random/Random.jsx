@@ -27,13 +27,16 @@ export const Random = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <nav>
-        <img className="w-full h-[180px]" src="Bgtop.png" alt="위 배경" />
-      </nav>
-      <div className="flex-1">
-        {/* Bg3.png 이미지 */}
-        <div className="bg-white flex flex-col items-center justify-center">
-          <div className="md:text-10xl lg:text-22xl xl:text-2xl m-5 font-extrabold text-[#ff8900] text-[28.4px] tracking-[0] leading-[normal] ">
+      <header className="fixed top-0 w-full ">
+        <img
+          className="sm:h-[70px] w-full h-[130px]"
+          src="Bgtop.png"
+          alt="위 배경"
+        />
+      </header>
+      <div className="flex-1 flex flex-col items-center justify-center">
+        <div className="fixed flex flex-col items-center justify-center  ">
+          <div className="md:text-10xl lg:text-22xl xl:text-2xl font-extrabold text-[#ff8900] text-[28.4px] tracking-[0] leading-[normal] ">
             랜덤 BOX 열기
           </div>
           <img
@@ -52,8 +55,12 @@ export const Random = () => {
           </button>
         </div>
       </div>
-      <footer className="text-white">
-        <img className="w-full h-[180px]" src="Bgbottom.png" alt="아래 배경" />
+      <footer className="fixed bottom-0 w-full">
+        <img
+          className="sm:h-[70px] w-full h-[130px]"
+          src="Bgbottom.png"
+          alt="아래 배경"
+        />
       </footer>
     </div>
   );

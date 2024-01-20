@@ -5,26 +5,22 @@ export const IssueComplete = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full h-full">
+    <div className="min-h-screen ">
       <div
         style={{ zIndex: '-2' }}
-        className="absolute w-full h-full bg-gradient-to-b from-orange-300 via-amber-100 to-amber-100"
+        className="fixed w-full h-full bg-gradient-to-b from-orange-300 via-amber-100 to-amber-100"
       >
         {/* 폭죽 이미지 */}
         <img
-          className="absolute w-full h-full"
+          className="fixed w-full h-full"
           src="폭죽.png"
           alt="폭죽 이미지"
           style={{ zIndex: '-1' }}
         />
       </div>
-      <img
-        className="w-[86px] h-[39px] left-[15px] top-[26px] mb-[150px]"
-        src="https://via.placeholder.com/86x39"
-        alt="플레이스홀더 이미지"
-      />
-      <div className="flex flex-col items-center justify-center w-full h-full text-center">
-        <div className="m-5 w-[270px] h-[270px] bg-gradient-to-br from-white to-rose-300 rounded-[20px]">
+
+      <div className="flex flex-col items-center justify-center text-center">
+        <div className="mt-[150px] w-[270px] h-[270px] bg-gradient-to-br from-white to-rose-300 rounded-[20px]">
           <img
             className="w-[270px] h-[290px]"
             src="아코1.png"
@@ -48,5 +44,3 @@ export const IssueComplete = () => {
     </div>
   );
 };
-
-export default IssueComplete;
