@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Random } from './pages/Random';
 import { RandomOngoing } from './pages/RandomOngoing';
 import { IssueComplete } from './pages/IssueComplete';
+import { VoteComplete } from './pages/VoteComplete';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/random" element={<Random />} />
         <Route path="/randomOngoing" element={<RandomOngoing />} />
         <Route path="/issueComplete" element={<IssueComplete />} />
+        <Route path="/VoteComplete" element={<VoteComplete />} />
       </Routes>
     </BrowserRouter>
   );
