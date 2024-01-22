@@ -5,11 +5,13 @@ import { Random } from './pages/Random';
 import { RandomOngoing } from './pages/RandomOngoing';
 import { IssueComplete } from './pages/IssueComplete';
 import { VoteComplete } from './pages/VoteComplete';
+import PageLayoutNav from './components/PageLayoutNav';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<PageLayoutNav />} />
         <Route path="/random" element={<Random />} />
         <Route path="/randomOngoing" element={<RandomOngoing />} />
         <Route path="/issueComplete" element={<IssueComplete />} />
