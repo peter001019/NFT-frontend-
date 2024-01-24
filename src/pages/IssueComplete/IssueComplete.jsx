@@ -23,7 +23,7 @@ export const IssueComplete = () => {
         <div className="mt-[150px] w-[270px] h-[270px] bg-gradient-to-br from-white to-rose-300 rounded-[20px]">
           <img
             className="w-[270px] h-[290px]"
-            src="아코1.png"
+            src="아코/아코1.png"
             alt="아코 이미지"
           />
         </div>

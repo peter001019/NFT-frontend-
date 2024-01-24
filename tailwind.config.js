@@ -7,6 +7,9 @@ module.exports = {
       md: { min: '401px', max: '1023px' },
       lg: { min: '1080px' },
     },
+    backgroundColor: {
+      'light-orange': 'rgba(255, 232, 189, 0.65)',
+    },
     extend: {
       fontFamily: {
         sans: [
