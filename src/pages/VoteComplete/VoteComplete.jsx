@@ -7,7 +7,7 @@ export const VoteComplete = () => {
   return (
     <PageLayout>
       <FireworkBackground />
-      <div className="flex flex-col items-center justify-center text-center">
+      <div className="mt-[130px] flex flex-col items-center justify-center text-center">
         <img
           className="flex-shrink-0 pb-[39px] w-[279px] h-[320px] object-contain"
           src="투표.png"
