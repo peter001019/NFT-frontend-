@@ -1,10 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PageLayoutNavOrange from '../../components/PageLayoutNavOrange';
-import ImgBanner from '../../components/ImgBanner';
 import LongButtonOrange from '../../components/Button/LongButtonOrange';
 
 export const Vote = () => {
-  useEffect(() => {}, []);
+  const [AcoId, setAcoId] = useState(0);
+  const AcoIds = [1, 2, 3, 4];
+
+  const handleClick = imageName => {
+    setAcoId(imageName);
+  };
 
   return (
     <PageLayoutNavOrange>
@@ -17,12 +21,18 @@ export const Vote = () => {
           하세요!
         </p>
         <div className="mt-[17px] grid grid-cols-2 gap-[12px]">
-          <ImgBanner imageName="아코/아코1.png" />
-          <ImgBanner imageName="아코/아코2.png" />
-          <ImgBanner imageName="아코/아코3.png" />
-          <ImgBanner imageName="아코/아코4.png" />
+          {AcoIds.map(imageName => (
+            <div
+              key={imageName}
+              onClick={() => handleClick(imageName)}
+              className={`flex justify-center items-center w-[178px] h-[231px] rounded-[20px] ${imageName === AcoId ? 'bg-[#FF8A00]' : 'bg-light-orange'}`}
+            >
+              <img src={`아코/아코${imageName}.png`} alt="아코" />
+            </div>
+          ))}
         </div>
-        <form>
+        <form action="/VoteComplete">
+          <input type="hidden" name="AcoId" value={AcoId} />
           <LongButtonOrange type={'submit'} buttonName={'투표하기'} />
         </form>
       </div>
