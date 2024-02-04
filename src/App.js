@@ -6,11 +6,13 @@ import { RandomOngoing } from './pages/RandomOngoing';
 import { IssueComplete } from './pages/IssueComplete';
 import { VoteComplete } from './pages/VoteComplete';
 import { Vote } from './pages/Vote';
+import Intro from './pages/Intro/Intro';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Intro />} />
         <Route path="/random" element={<Random />} />
         <Route path="/randomOngoing" element={<RandomOngoing />} />
         <Route path="/issueComplete" element={<IssueComplete />} />
